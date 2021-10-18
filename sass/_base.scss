@@ -1,0 +1,44 @@
+/** 
+-Import Google Fonts and Define font variables
+-Define color varibalbes
+-Reset CSS properties(margin, padding)
+*/
+
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+// Font variable
+$publicsans: "Public Sans", sans-serif;
+// Colors
+:root {
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --color-lime-green: hsl(136, 65%, 51%);
+  --color-bright-cyan: hsl(192, 70%, 51%);
+
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-blue: hsl(220, 16%, 96%);
+  --color-very-light-blue: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+// Resetting
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: $publicsans;
+}
