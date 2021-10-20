@@ -7,11 +7,11 @@ let isModalOpen = false;
 mobileMenu.addEventListener('click', (e)=>{
   if(!isModalOpen){
     modal.style.display="block";
-    image.src ="../images/icon-close.svg";
+    image.src ="./images/icon-close.svg";
     isModalOpen =! isModalOpen;
     body.classList.add('forbid-scroll');
   }else{
-    image.src ="../images/icon-hamburger.svg";
+    image.src ="./images/icon-hamburger.svg";
     isModalOpen =! isModalOpen;
     modal.style.display="none";
     body.classList.toggle('forbid-scroll');
@@ -24,7 +24,7 @@ window.onresize= (e) =>{
   if(currentVW >= 800){
     isModalOpen = false;
     modal.style.display="none";
-    image.src="../images/icon-hamburger.svg";
+    image.src="./images/icon-hamburger.svg";
     body.classList.remove('forbid-scroll');
   }
 }
