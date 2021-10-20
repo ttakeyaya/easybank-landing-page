@@ -1,5 +1,13 @@
 @import "base";
-@import "layout";
+@import "layouts/header";
+@import "layouts/layout";
+@import "layouts/features";
+@import "layouts/articles";
+@import "layouts/footer";
 @import "font.scss";
 @import "button.scss";
 @import "modal.scss";
+
+/**
+layouts/layout.scss file is not for the whole layout. It aims for the section containing the slogan of the site and the mockup image.
+*/

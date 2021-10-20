@@ -1,0 +1,81 @@
+/** Styles the section including the slogan of the site and mock-up image.
+
+note that the font of the slogan is defined @ _font.scss
+*/
+.main {
+  overflow: hidden;
+}
+.landing-top {
+  padding-bottom: 4.8rem;
+  background-color: var(--color-very-light-blue);
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: minmax(300px, 400px) 300px;
+  grid-template-areas:
+    "hero"
+    "texts";
+  transform: translateY(-10%);
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(400px, 1fr);
+    grid-template-areas: "texts hero";
+    transform: translateY(0);
+  }
+  .hero-container {
+    grid-area: hero;
+    position: relative;
+    background: url("../images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    & > img {
+      position: absolute;
+      top: -50px;
+      width: 100%;
+      object-fit: contain;
+      height: 110%;
+    }
+    @media screen and (min-width: 800px) {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      background: url("../images/bg-intro-desktop.svg");
+      background-position: left;
+      background-size: 150%;
+      background-repeat: no-repeat;
+
+      & > img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        top: -25%;
+        left: 18%;
+        object-fit: contain;
+      }
+    }
+  }
+  .texts-container {
+    grid-area: texts;
+    text-align: center;
+    padding-top: 4rem;
+    @media screen and (min-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+    &__middle {
+      margin-top: 1.6rem;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 3.2rem;
+      padding: 0 1rem;
+      @media screen and (min-width: 800px) {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  }
+}

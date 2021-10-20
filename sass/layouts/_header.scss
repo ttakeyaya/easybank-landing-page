@@ -1,0 +1,82 @@
+/** Defines the header of the page including "easybank" icon, navigations and CTA button.
+
+note that cta button is defined @ _button.scss
+*/
+
+.header {
+  margin: 2.2rem 2.4rem;
+
+  padding: 2rem 2rem;
+  @media screen and (min-width: 800px) {
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (min-width: 1000px) {
+    padding: 0rem 15rem;
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 600px) {
+    }
+    @media screen and (min-width: 800px) {
+      height: 8rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__nav {
+    position: relative;
+    @media screen and (min-width: 600px) {
+      align-self: stretch;
+    }
+    &.nav-hidden {
+      display: none;
+      @media screen and (min-width: 800px) {
+        display: block;
+      }
+    }
+    .nav {
+      @media screen and (min-width: 600px) {
+        height: 100%;
+        list-style-type: none;
+        align-self: stretch;
+        display: flex;
+        min-width: 350px;
+        justify-content: space-around;
+        align-items: center;
+        .nav-item {
+          cursor: pointer;
+          position: relative;
+          align-self: stretch;
+          padding-top: 25px;
+
+          &:hover {
+            color: var(--color-dark-blue);
+            font-weight: 700;
+            border-bottom: 3px solid var(--color-lime-green);
+          }
+        }
+      }
+    }
+  }
+  .btn {
+    &.btn-mobile {
+      display: none;
+      @media screen and (min-width: 800px) {
+        display: block;
+      }
+    }
+  }
+  .hamburger {
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+    &__input {
+      display: none;
+    }
+    &__label {
+      cursor: pointer;
+    }
+  }
+}

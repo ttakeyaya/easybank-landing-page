@@ -40,6 +40,10 @@ body {
   overflow: hidden;
 }
 
+/** Defines the header of the page including "easybank" icon, navigations and CTA button.
+
+note that cta button is defined @ _button.scss
+*/
 .header {
   margin: 2.2rem 2.4rem;
   padding: 2rem 2rem;
@@ -124,6 +128,10 @@ body {
   cursor: pointer;
 }
 
+/** Styles the section including the slogan of the site and mock-up image.
+
+note that the font of the slogan is defined @ _font.scss
+*/
 .main {
   overflow: hidden;
 }
@@ -208,6 +216,9 @@ body {
   }
 }
 
+/** Styling for the features of the product.
+
+*/
 .features {
   padding-bottom: 6.4rem;
   background-color: var(--color-light-blue);
@@ -282,6 +293,9 @@ body {
   margin: 0 auto;
 }
 
+/** Styling for the section including latest articles
+
+*/
 .articles {
   background-color: var(--color-very-light-blue);
   padding-top: 8.8rem;
@@ -371,6 +385,9 @@ body {
   color: var(--color-lime-green);
 }
 
+/** styles for the footer
+
+*/
 .footer {
   background-color: var(--color-dark-blue);
   text-align: center;
@@ -635,5 +652,9 @@ body {
 .modal__menu__item {
   cursor: pointer;
 }
+
+/**
+layouts/layout.scss file is not for the whole layout. It aims for the section containing the slogan of the site and the mockup image.
+*/
 
 /*# sourceMappingURL=main.css.map */

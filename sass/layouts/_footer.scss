@@ -1,0 +1,104 @@
+/** styles for the footer
+
+*/
+.footer {
+  @media screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .logo-social-container {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .footer__nav-container {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .btn-reserved-container {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: 20% 40% 40%;
+    .logo-social-container {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    .footer__nav-container {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .btn-reserved-container {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      padding-right: 16.5rem;
+      text-align: right;
+    }
+  }
+  background-color: var(--color-dark-blue);
+  text-align: center;
+  &__image-container {
+    padding-top: 4rem;
+  }
+  .social-medias-container {
+    width: 18.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    margin-right: auto;
+    margin-left: auto;
+    .social-medias {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      &__item {
+        cursor: pointer;
+      }
+    }
+  }
+  &__nav {
+    list-style-type: none;
+
+    @media screen and (min-width: 600px) {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1000px) {
+      text-align: left;
+      max-width: 300px;
+    }
+    .nav__left {
+      @media screen and (min-width: 1000px) {
+        .nav-text {
+          padding-bottom: 0;
+        }
+      }
+    }
+    .nav__right {
+      @media screen and (min-width: 1000px) {
+        .nav-text {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &__nav-item {
+    padding: 1rem 0;
+    cursor: pointer;
+    &:hover {
+      color: var(--color-lime-green);
+    }
+  }
+  &__btn {
+    margin-top: 3.2rem;
+    margin-bottom: 2.4rem;
+  }
+  &__reserved {
+    padding-bottom: 4rem;
+  }
+}
+.social-icon {
+  &:hover {
+    fill: var(--color-lime-green);
+  }
+}
