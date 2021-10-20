@@ -30,3 +30,14 @@
 html {
   box-sizing: border-box;
 }
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--color-very-light-blue);
+}
+// add the following class to html and body if the modal is open. If not, remove it.(manipulated by Javascript(check @js/app.js)
+.forbid-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}

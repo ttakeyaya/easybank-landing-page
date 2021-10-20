@@ -1,0 +1,29 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 11%;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(29, 29, 29, 0.7),
+    rgba(117, 114, 114, 0.6)
+  );
+  &__menu {
+    background-color: white;
+    width: 85vw;
+    margin: 3rem auto;
+    list-style-type: none;
+    height: 26.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    &__item {
+      cursor: pointer;
+    }
+  }
+}
